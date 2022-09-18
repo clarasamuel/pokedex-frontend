@@ -43,5 +43,10 @@
   "volta": {
     "node": "16.13.0",
     "yarn": "1.19.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
