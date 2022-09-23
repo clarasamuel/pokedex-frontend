@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./src/components/**/*.{js,jsx,ts,tsx}",
-        './src/index.html',
+        "./src/components/*/*.tsx",
+        "./src/components/*.tsx"
     ],
     theme: {
         screens: {
@@ -12,16 +12,16 @@ module.exports = {
             xl: '1440px',
         },
         colors: {
-            transparent: 'transparent',
-            black: '#000',
-            white: '#fff',
-            gray: {
-                100: '#f7fafc',
-                900: '#1a202c',
-            },
+            'pokemon-dark-blue': '#363b81',
+            'pokemon-light-blue': '#5db9ff',
+            'pokemon-red': '#ff1f1f',
+            'pokemon-yellow': '#fbd743',
+            'pokemon-white': '#ffffff',
+            'pokemon-dark-purple' : '#daddfe',
+            'pokemon-light-purple' : '#f9f6fd',
+            'pokemon-darkest-purple': '#cfc8ff'
         },
         spacing: {
-            px: '1px',
             0: '0',
             0.5: '0.125rem',
             1: '0.25rem',

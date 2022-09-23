@@ -1,12 +1,9 @@
 import React from 'react';
+import HomeView from "./components/view/HomeView";
 
 function App() {
 	return (
-		<div>
-			<h1 className='text-white'>
-				Hello world!
-			</h1>
-		</div>
+		<HomeView/>
 	);
 }
 
