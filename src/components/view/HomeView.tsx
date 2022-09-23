@@ -3,6 +3,7 @@ import {Pokemon} from "../../interfaces/PokemonInterface";
 import PokemonService from "../../services/PokemonService";
 import PokemonList from "../PokemonList";
 import Pagination from "../Pagination";
+import PokemonListSkeleton from "../PokemonListSkeleton";
 
 const HomeView: FunctionComponent = () => {
 	const [isLoading, setIsLoading] = useState(true)
@@ -27,7 +28,7 @@ const HomeView: FunctionComponent = () => {
 				<div className='mt-12 mx-32'>
 					{
 						isLoading ?
-							'SCELETTON' :
+							<PokemonListSkeleton />:
 							<PokemonList pokemonToShow={pokemonToShow}/>
 					}
 				</div>
