@@ -7,7 +7,7 @@ const PokemonList: FunctionComponent<{ pokemonToShow: Pokemon[] }> = ({pokemonTo
 	return (
 		<div className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4'>
 			{
-				pokemonToShow.map((poke) => <CardPokemon pokemon={poke}/>)
+				pokemonToShow.map((poke : Pokemon) => <CardPokemon pokemon={poke}/>)
 			}
 		</div>
 	);

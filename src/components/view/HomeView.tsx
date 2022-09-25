@@ -6,14 +6,14 @@ import Pagination from "../Pagination";
 import PokemonListSkeleton from "../PokemonListSkeleton";
 
 const HomeView: FunctionComponent = () => {
-	const [isLoading, setIsLoading] = useState(true)
+	const [isLoading, setIsLoading] = useState<boolean>(true)
 	const [pokemonToShow, setPokemonToShow] = useState<Pokemon[]>([])
 	const [page, setPage] = useState<number>(0)
 
 	useEffect(() => {
 		setIsLoading(true)
 		//Récuperation des pokémons a afficher
-		PokemonService.getPokemonList(page, 15).then((pokeToShow) => {
+		PokemonService.getPokemonList(page, 15).then((pokeToShow: Pokemon[]) => {
 			setPokemonToShow(pokeToShow)
 			setIsLoading(false)
 		})
